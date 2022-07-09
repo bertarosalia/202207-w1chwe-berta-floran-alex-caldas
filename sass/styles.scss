@@ -1,5 +1,8 @@
 @use "variables/colors";
 @use "variables/fonts";
+@use "partials/find-form";
+@use "partials/search-form";
+@use "partials/header";
 
 * {
   box-sizing: border-box;
@@ -10,103 +13,13 @@ body {
   width: 100vw;
   height: auto;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 8px;
-  height: 81px;
-  padding: 50px;
-}
-
-h1 {
-  display: inline-block;
-  width: 205px;
-  height: 55px;
-  display: inline-block;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 34.375px;
-  color: colors.$primary-color;
-}
-h2 {
-  font-weight: 24px;
-  text-align: center;
-}
-
-#menu {
-  display: none;
-}
-label[for="menu"] span {
-  display: block;
-  margin: 4px;
-  height: 4px;
-  width: 28px;
-  background-color: colors.$primary-color;
-  border-radius: 4px;
-}
-form {
-  width: 420px;
-  padding: 30px;
-}
-input {
-  font-family: fonts.$font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: 0.75px;
-}
-input[type="text"] {
-  border-radius: 16px;
-  background-color: colors.$input-colors;
-  text-align: left;
-  box-sizing: border-box;
-  border: colors.$input-border;
-  width: 100%;
-  height: 56px;
-}
-input[type="button"] {
-  background: colors.$button-color;
-  border-radius: 40px;
-}
 
 .break-line {
   height: 0;
   opacity: 0.4;
-  border: 1px solid colors.$shadow-color;
+  border: 1px solid colors.$text-secondary-color;
 }
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-aside {
-  width: 420px;
-  height: 614px;
-  border-radius: 20px;
-  padding: 35px;
-  background-color: colors.$secondary-color;
-  color: colors.$text-secondary-color;
-}
-label {
-  white-space: nowrap;
-  margin: 0 0 20px 0;
-}
-input,
-select {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: 0.75px;
-  height: 59px;
-  width: 100%;
-  border: 0;
-  padding: 20px;
-  margin: 0 0 13px 0;
-  border-radius: 15px;
-  background-color: colors.$input-primary-background-color;
-}
+
 input[type="submit"] {
   font-weight: 600;
   border-radius: 100px;
