@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
   </head>
@@ -24,5 +30,24 @@
       </label>
     </header>
     <div class="break-line"></div>
+    <main>
+      <aside>
+        <h2>Search</h2>
+        <form action="submit" autocomplete="off">
+          <label for="destination">Destination/property name</label>
+          <select name="destination" id="destination">
+            <option value="" disabled selected>Gold Coast</option>
+          </select>
+          <label for="check-in">Check-in date</label>
+          <input type="date" name="check-in" id="check-in" />
+          <label for="check-out">Check-out date</label>
+          <input type="date" name="check-out" id="check-out" />
+          <label for="trabellers">Travellers</label>
+          <input type="text" name="trabellers" id="trabellers" />
+          <label for="">&nbsp;</label>
+          <input type="submit" value="Search" />
+        </form>
+      </aside>
+    </main>
   </body>
 </html>
