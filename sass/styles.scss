@@ -26,3 +26,43 @@ input[type="submit"] {
   color: colors.$text-terceary-color;
   background-color: colors.$input-secondary-background-color;
 }
+article {
+  width: 100%;
+  padding: 20px;
+  color: colors.$primary-color;
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 20px;
+}
+.rating {
+  height: 70px;
+  font-size: 50px;
+  display: flex;
+  gap: 10px;
+  color: colors.$input-secondary-background-color;
+}
+.rating input {
+  display: none;
+}
+input[name="star"]:checked {
+  background-color: red;
+  fill: red;
+}
+button {
+  font-family: "Poppins";
+  font-size: 16px;
+  letter-spacing: 0.75px;
+  font-weight: 600;
+  border-radius: 100px;
+  height: 59px;
+  border: 3px solid colors.$second-border-color;
+  padding: 10px 30px;
+  margin: 0 0 13px 0;
+  border-radius: 50px;
+  background-color: transparent;
+  color: colors.$text-forth-color;
+}
