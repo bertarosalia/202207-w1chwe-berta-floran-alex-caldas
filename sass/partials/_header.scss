@@ -1,0 +1,33 @@
+@use "../variables/colors";
+@use "../variables/fonts";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+  height: 81px;
+  padding: 50px;
+}
+
+h1 {
+  display: inline-block;
+  width: 205px;
+  height: 55px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34.375px;
+  color: colors.$primary-color;
+}
+#menu {
+  display: none;
+}
+label[for="menu"] span {
+  display: block;
+  margin: 4px;
+  height: 4px;
+  width: 28px;
+  background-color: colors.$primary-color;
+  border-radius: 4px;
+}
