@@ -1,8 +1,9 @@
 @use "variables/colors";
 @use "variables/fonts";
-@use "partials/find-form";
-@use "partials/search-form";
-@use "partials/header";
+@use "components/find-form";
+@use "components/search-form";
+@use "components/header";
+@use "components/footer";
 
 * {
   box-sizing: border-box;

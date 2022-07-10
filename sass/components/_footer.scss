@@ -1,0 +1,29 @@
+@use "../variables/colors";
+@use "../variables/fonts";
+
+footer {
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  align-items: ;
+}
+.title {
+  font-size: 55px;
+  color: colors.$primary-color;
+}
+@media (min-width: 1310px) {
+  .footer-container {
+    font-size: 20px;
+  }
+  .navigation-footer {
+    display: none;
+  }
+}
+p {
+  font-size: 16px;
+}
+ul {
+  text-align: left;
+  list-style: none;
+}
