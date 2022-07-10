@@ -20,90 +20,92 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>Travelulu</h1>
-      <input id="menu" type="checkbox" />
-      <label for="menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </header>
-    <div class="break-line"></div>
-    <main>
-      <section>
-        <h2>Find deals on hotels, homes and much more</h2>
-        <form class="find" action="submit" autocomplete="off">
-          <input
-            type="text"
-            id="where"
-            placeholder="Where are you going"
-            required
-          />
-          <input
-            type="text"
-            id="where"
-            placeholder="Check-in Check-out"
-            required
-          />
-          <input
-            type="text"
-            id="where"
-            placeholder="2 adults - 0 children"
-            required
-          />
-          <input type="button" value="Search" />
-        </form>
-      </section>
+    <div class="page-container">
+      <header>
+        <h1>Travelulu</h1>
+        <input id="menu" type="checkbox" />
+        <label for="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </header>
       <div class="break-line"></div>
-      <aside>
-        <h2>Search</h2>
-        <form action="submit" autocomplete="off">
-          <label for="destination">Destination/property name</label>
-          <select name="destination" id="destination">
-            <option value="" disabled selected>Gold Coast</option>
-          </select>
-          <label for="check-in">Check-in date</label>
-          <input type="date" id="check-in" />
-          <label for="check-out">Check-out date</label>
-          <input type="date" id="check-out" />
-          <label for="travellers">Travellers</label>
-          <input type="text" id="travellers" />
-          <label for="">&nbsp;</label>
-          <input type="submit" value="Search" />
-        </form>
-      </aside>
-      <h2>254 Properties Found</h2>
-      <article>
-        <div class="carousel">
-          <img src="img/c1.png" alt="casa" />
-          <img src="img/c1.png" alt="casa" />
-          <img src="img/c1.png" alt="casa" />
-          <img src="img/c1.png" alt="casa" />
-        </div>
-        <div class="rating">
-          <label for="star1">&#9734;</label>
-          <input type="checkbox" id="star1" />
-          <label for="star2">&#9734;</label>
-          <input type="checkbox" id="star2" />
-          <label for="star3">&#9734;</label>
-          <input type="checkbox" id="star3" />
-          <label for="star4">&#9734;</label>
-          <input type="checkbox" id="star4" />
-          <label for="star5">&#9734;</label>
-          <input type="checkbox" id="star5" />
-        </div>
-        <span>
-          <h3>EState de la Newcastle</h3>
-          <p>Newcastle City Centre, Newcastle upon Tyne 0,11km from centre</p>
-          <h4>Show on map</h4>
-          <p>
-            Situated in Newcastle City Centre, Maldron Hotel features free WiFi
-            and private court yard.
-          </p>
-          <button>Make a booking</button>
-        </span>
-      </article>
-    </main>
+      <main>
+        <section>
+          <h2>Find deals on hotels, homes and much more</h2>
+          <form class="find" action="submit" autocomplete="off">
+            <input
+              type="text"
+              id="where"
+              placeholder="Where are you going"
+              required
+            />
+            <input
+              type="text"
+              id="where"
+              placeholder="Check-in Check-out"
+              required
+            />
+            <input
+              type="text"
+              id="where"
+              placeholder="2 adults - 0 children"
+              required
+            />
+            <input type="button" value="Search" />
+          </form>
+        </section>
+        <div class="break-line"></div>
+        <aside>
+          <h2>Search</h2>
+          <form action="submit" autocomplete="off">
+            <label for="destination">Destination/property name</label>
+            <select name="destination" id="destination">
+              <option value="" disabled selected>Gold Coast</option>
+            </select>
+            <label for="check-in">Check-in date</label>
+            <input type="date" id="check-in" />
+            <label for="check-out">Check-out date</label>
+            <input type="date" id="check-out" />
+            <label for="travellers">Travellers</label>
+            <input type="text" id="travellers" />
+            <label for="">&nbsp;</label>
+            <input type="submit" value="Search" />
+          </form>
+        </aside>
+        <h2>254 Properties Found</h2>
+        <article>
+          <div class="carousel">
+            <img src="img/c1.png" alt="casa" />
+            <img src="img/c1.png" alt="casa" />
+            <img src="img/c1.png" alt="casa" />
+            <img src="img/c1.png" alt="casa" />
+          </div>
+          <div class="rating">
+            <label for="star1">&#9734;</label>
+            <input type="checkbox" id="star1" />
+            <label for="star2">&#9734;</label>
+            <input type="checkbox" id="star2" />
+            <label for="star3">&#9734;</label>
+            <input type="checkbox" id="star3" />
+            <label for="star4">&#9734;</label>
+            <input type="checkbox" id="star4" />
+            <label for="star5">&#9734;</label>
+            <input type="checkbox" id="star5" />
+          </div>
+          <span>
+            <h3>EState de la Newcastle</h3>
+            <p>Newcastle City Centre, Newcastle upon Tyne 0,11km from centre</p>
+            <h4>Show on map</h4>
+            <p>
+              Situated in Newcastle City Centre, Maldron Hotel features free
+              WiFi and private court yard.
+            </p>
+            <button>Make a booking</button>
+          </span>
+        </article>
+      </main>
+    </div>
   </body>
 </html>
