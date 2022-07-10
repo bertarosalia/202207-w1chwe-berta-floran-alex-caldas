@@ -1,0 +1,10 @@
+@use "../variables/colors";
+@use "input";
+
+@mixin inputSubmit {
+  @include input.inputDefault;
+  border-radius: 100px;
+  font-weight: 600;
+  color: colors.$text-terceary-color;
+  background-color: colors.$background-secondary-color;
+}
