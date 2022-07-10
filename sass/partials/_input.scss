@@ -1,16 +1,17 @@
 @use "../variables/colors";
 @use "../variables/fonts";
 @use "../variables/mediaquerys";
+@use "../variables/spacing";
 
 @mixin inputDefault {
   height: 60px;
   width: 100%;
   padding: 20px;
+  margin: spacing.$spacing-secondary;
   border: 0;
   color: colors.$border-primary-color;
   background-color: colors.$background-primary-color;
   border-radius: 17px;
-  margin: 0 0 13px 0;
   font-family: fonts.$font;
   font-size: 16px;
   line-height: 23px;

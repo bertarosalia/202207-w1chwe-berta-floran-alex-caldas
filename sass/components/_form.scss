@@ -1,19 +1,26 @@
 @use "../variables/colors";
 @use "../variables/fonts";
 @use "../variables/mediaquerys";
+@use "../variables/spacing";
 @use "../partials/input";
 @use "../partials/submit";
 
+form {
+  margin: spacing.$spacing-primary;
+}
 aside {
-  max-width: 420px;
   border-radius: 20px;
-  padding: 0 20px;
+  padding: 5px 20px;
   background-color: colors.$secondary-color;
   color: colors.$text-secondary-color;
+  @include mediaquerys.desktop {
+    width: 370px;
+  }
 }
 input {
   @include input.inputDefault;
   border: 0;
+  margin: spacing.$spacing-terceary;
 }
 .find input {
   @include mediaquerys.desktop {
@@ -34,7 +41,6 @@ select {
 }
 label {
   white-space: nowrap;
-  margin: 0 0 20px 0;
 }
 
 input[type="submit"] {
