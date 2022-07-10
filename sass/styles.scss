@@ -1,14 +1,13 @@
 @use "variables/colors";
 @use "variables/fonts";
+@use "variables/spacing";
+@use "variables/mediaquerys";
 @use "components/form";
 @use "components/header";
-@use "variables/mediaquerys";
+@use "components/card";
 
 * {
   box-sizing: border-box;
-}
-* * {
-  margin: 30px 10px;
 }
 body {
   font-family: fonts.$font;
@@ -22,6 +21,20 @@ h2 {
   @include mediaquerys.desktop {
     font-size: 32px;
   }
+}
+h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 21px;
+}
+p {
+  font-size: 18px;
+  color: colors.$border-primary-color;
 }
 section {
   width: 100%;
@@ -37,35 +50,32 @@ section {
   opacity: 0.4;
   border: 1px solid colors.$text-secondary-color;
 }
-
 article {
   width: 100%;
   padding: 20px;
   color: colors.$primary-color;
 }
-.carousel {
+.content {
+  margin: spacing.$spacing-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mediaquerys.desktop {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+.main-content {
   width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  gap: 20px;
+  max-width: 770px;
 }
-.rating {
-  height: 70px;
-  font-size: 50px;
-  display: flex;
-  gap: 10px;
-  color: colors.$background-secondary-color;
+.card {
+  width: 100%;
+  @include card.card;
 }
-.rating input {
-  display: none;
-}
-input[name="star"]:checked {
-  background-color: red;
-  fill: red;
-}
-
 main {
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
