@@ -10,12 +10,21 @@
 body {
   font-family: fonts.$font;
   margin: 0;
-  width: 100vw;
   height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
-
+.page-container {
+  width: 100vw;
+  max-width: 1300px;
+}
+.page-container * {
+  margin: 30px 10px;
+}
 .break-line {
   height: 0;
+  width: 100%;
   opacity: 0.4;
   border: 1px solid colors.$text-secondary-color;
 }
