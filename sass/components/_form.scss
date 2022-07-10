@@ -1,0 +1,48 @@
+@use "../variables/colors";
+@use "../variables/fonts";
+@use "../variables/mediaquerys";
+@use "../variables/spacing";
+@use "../partials/input";
+@use "../partials/submit";
+
+form {
+  margin: spacing.$spacing-primary;
+}
+aside {
+  border-radius: 20px;
+  padding: 5px 20px;
+  background-color: colors.$secondary-color;
+  color: colors.$text-secondary-color;
+  @include mediaquerys.desktop {
+    width: 370px;
+  }
+}
+input {
+  @include input.inputDefault;
+  border: 0;
+  margin: spacing.$spacing-terceary;
+}
+.find input {
+  @include mediaquerys.desktop {
+    max-width: 260px;
+  }
+}
+.find #where {
+  @include mediaquerys.desktop {
+    max-width: none;
+    width: 470px;
+  }
+}
+.find input {
+  border: 2px solid colors.$border-primary-color;
+}
+select {
+  @include input.inputDefault;
+}
+label {
+  white-space: nowrap;
+}
+
+input[type="submit"] {
+  @include submit.inputSubmit;
+}

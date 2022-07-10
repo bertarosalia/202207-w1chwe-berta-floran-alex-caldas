@@ -1,0 +1,25 @@
+@use "../variables/mediaquerys";
+@use "../partials/carousel";
+@use "../partials/button";
+@use "../partials/rating";
+
+@mixin card {
+  display: flex;
+  flex-direction: column;
+
+  .carousel {
+    @include carousel.carousel;
+  }
+  button {
+    @include button.buttonDefault;
+  }
+  @include rating.rating;
+  @include mediaquerys.desktop {
+    img {
+      display: none;
+    }
+    .carousel > img {
+      display: block;
+    }
+  }
+}
