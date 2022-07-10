@@ -7,7 +7,6 @@
 @use "components/footer";
 @use "components/card";
 
-
 * {
   box-sizing: border-box;
 }
@@ -65,16 +64,21 @@ article {
   @include mediaquerys.desktop {
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 .main-content {
   width: 100%;
-  max-width: 770px;
+  @include mediaquerys.desktop {
+    margin: 0 0 0 30px;
+  }
 }
 .card {
   width: 100%;
   @include card.card;
+}
+.info {
+  position: relative;
 }
 main {
   padding: 30px;

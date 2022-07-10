@@ -14,16 +14,16 @@ aside {
   background-color: colors.$secondary-color;
   color: colors.$text-secondary-color;
   @include mediaquerys.desktop {
-    width: 370px;
+    width: 470px;
   }
 }
 input {
   @include input.inputDefault;
   border: 0;
-  margin: spacing.$spacing-terceary;
 }
 .find input {
   @include mediaquerys.desktop {
+    margin: spacing.$spacing-terceary;
     max-width: 260px;
   }
 }

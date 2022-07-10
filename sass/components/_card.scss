@@ -7,19 +7,20 @@
   display: flex;
   flex-direction: column;
 
+  @include rating.rating;
+
   .carousel {
     @include carousel.carousel;
   }
   button {
     @include button.buttonDefault;
+    @include mediaquerys.desktop {
+      position: absolute;
+      top: -50px;
+      right: 0;
+    }
   }
-  @include rating.rating;
   @include mediaquerys.desktop {
-    img {
-      display: none;
-    }
-    .carousel > img {
-      display: block;
-    }
+    flex-direction: row;
   }
 }
