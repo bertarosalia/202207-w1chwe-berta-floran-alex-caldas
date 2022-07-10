@@ -1,11 +1,14 @@
 @use "variables/colors";
 @use "variables/fonts";
-@use "partials/find-form";
-@use "partials/search-form";
-@use "partials/header";
+@use "components/form";
+@use "components/header";
+@use "variables/mediaquerys";
 
 * {
   box-sizing: border-box;
+}
+* * {
+  margin: 30px 10px;
 }
 body {
   font-family: fonts.$font;
@@ -15,12 +18,18 @@ body {
   display: flex;
   justify-content: center;
 }
-.page-container {
-  width: 100vw;
-  max-width: 1300px;
+h2 {
+  @include mediaquerys.desktop {
+    font-size: 32px;
+  }
 }
-.page-container * {
-  margin: 30px 10px;
+section {
+  width: 100%;
+}
+.page-container {
+  margin: 0;
+  width: 100vw;
+  max-width: 1500px;
 }
 .break-line {
   height: 0;
@@ -29,12 +38,6 @@ body {
   border: 1px solid colors.$text-secondary-color;
 }
 
-input[type="submit"] {
-  font-weight: 600;
-  border-radius: 100px;
-  color: colors.$text-terceary-color;
-  background-color: colors.$input-secondary-background-color;
-}
 article {
   width: 100%;
   padding: 20px;
@@ -52,7 +55,7 @@ article {
   font-size: 50px;
   display: flex;
   gap: 10px;
-  color: colors.$input-secondary-background-color;
+  color: colors.$background-secondary-color;
 }
 .rating input {
   display: none;
@@ -61,17 +64,9 @@ input[name="star"]:checked {
   background-color: red;
   fill: red;
 }
-button {
-  font-family: "Poppins";
-  font-size: 16px;
-  letter-spacing: 0.75px;
-  font-weight: 600;
-  border-radius: 100px;
-  height: 59px;
-  border: 3px solid colors.$second-border-color;
-  padding: 10px 30px;
-  margin: 0 0 13px 0;
-  border-radius: 50px;
-  background-color: transparent;
-  color: colors.$text-forth-color;
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
