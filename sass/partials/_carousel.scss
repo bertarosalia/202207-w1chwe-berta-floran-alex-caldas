@@ -1,3 +1,5 @@
+@use "../variables/mediaquerys";
+
 @mixin carousel {
   width: 100%;
   display: flex;
@@ -5,4 +7,16 @@
   flex-wrap: nowrap;
   overflow: auto;
   gap: 20px;
+  @include mediaquerys.desktop {
+    width: 360px;
+    margin: 10px;
+    img {
+      display: none;
+      &:first-child {
+        display: block;
+        height: 200px;
+        width: auto;
+      }
+    }
+  }
 }

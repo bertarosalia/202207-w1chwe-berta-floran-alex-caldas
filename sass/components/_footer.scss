@@ -1,12 +1,36 @@
 @use "../variables/colors";
 @use "../variables/fonts";
+@use "../variables/mediaquerys";
+@use "../variables/spacing";
 
 footer {
+  width: 100%;
+  margin: spacing.$spacing-primary;
   text-align: center;
-}
-.footer-container {
   display: flex;
-  align-items: ;
+  flex-direction: column;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+  }
+  @include mediaquerys.desktop {
+    margin: none;
+    flex-direction: row;
+    text-align: left;
+  }
+  .navigation-footer {
+    display: none;
+    @include mediaquerys.desktop {
+      display: block;
+    }
+  }
+}
+
+footer > * {
+  @include mediaquerys.desktop {
+    max-width: 260px;
+  }
 }
 .title {
   font-size: 55px;
@@ -17,7 +41,7 @@ footer {
     font-size: 20px;
   }
   .navigation-footer {
-    display: none;
+    display: block;
   }
 }
 p {
